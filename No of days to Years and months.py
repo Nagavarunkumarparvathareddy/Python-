@@ -1,0 +1,42 @@
+n = int(input("Enter no of days: "))
+year = n // 365
+days = n % 365
+
+if days < 31:
+    month = 0
+    day = days
+elif days >= 31 and days < 59:
+    month = 1
+    day = days - 31
+elif days >= 59 and days < 90:
+    month = 2
+    day = days - 59
+elif days >= 90 and days < 120:
+    month = 3
+    day = days - 90
+elif days >= 120 and days < 151:
+    month = 4
+    day = days - 120
+elif days >= 151 and days < 181:
+    month = 5
+    day = days - 151
+elif days >= 181 and days < 211:
+    month = 6
+    day = days - 181
+elif days >= 211 and days < 242:
+    month = 7
+    day = days - 211
+elif days >= 242 and days < 273:
+    month = 8
+    day = days - 242
+elif days >= 273 and days < 303:
+    month = 9
+    day = days - 273
+elif days >= 303 and days < 334:
+    month = 10
+    day = days - 303
+elif days >= 334 and days < 365:
+    month = 11
+    day = days - 334
+
+print(f'{n} days = {year} years, {month} months, {day} days')
