@@ -1,0 +1,7 @@
+print('Power Calculator')
+print('='*50)
+a = float(input('Enter the base: '))
+m = float(input('Enter the power: '))
+print('='*50)
+print(f'\t\t {a} power {m} = {a**m}')
+print('='*50)
